@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.Label?>
+<BorderPane xmlns="http://javafx.com/javafx"
+	xmlns:fx="http://javafx.com/fxml"
+	fx:controller="application.FourFloorController"
+	stylesheets="@application.css" styleClass="borderPane" prefWidth="600"
+	prefHeight="600">
+
+	<top>
+		<Label fx:id="messageLabel" text="ここに情報が表示されます。"
+			styleClass="label-box" prefWidth="300" wrapText="true" />
+	</top>
+
+	<center>
+		<StackPane>
+			<ImageView fx:id="imageView" fitWidth="600" fitHeight="400"
+				preserveRatio="true" styleClass="imageView">
+				<image>
+					<Image
+						url="file:/C:/pleiades/2023-12/workspace/java_fx/src/application/image/4f.png" />
+				</image>
+			</ImageView>
+
+		</StackPane>
+
+	</center>
+	<bottom>
+		<VBox alignment="BOTTOM_LEFT" spacing="10">
+			<Button fx:id="button6" text="3階" onAction="#goToSardFloor" />
+			<Button fx:id="button7" text="5階" onAction="#goToFiveFloor" />
+		</VBox>
+	</bottom>
+
+	<Rectangle fx:id="Area1" x="24.5" y="24.5" width="38"
+		height="111" stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area2" x="63" y="99" width="13" height="36"
+		stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area3" x="24.5" y="135" width="51"
+		height="124" stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area4" x="22" y="238" width="102"
+		height="122" stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area5" x="70" y="224" width="54"
+		height="13" stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area6" x="124" y="210" width="133"
+		height="135" stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area7" x="257" y="210" width="151"
+		height="135" stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area8" x="408" y="210" width="133"
+		height="118" stroke="transparent" fill="transparent" />
+
+</BorderPane>

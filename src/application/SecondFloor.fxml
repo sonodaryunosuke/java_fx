@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.Label?>
+<BorderPane xmlns="http://javafx.com/javafx"
+	xmlns:fx="http://javafx.com/fxml"
+	fx:controller="application.SecondFloorController"
+	stylesheets="@application.css" styleClass="borderPane" prefWidth="600"
+	prefHeight="600">
+
+	<top>
+		<Label fx:id="messageLabel" text="ここに情報が表示されます。"
+			styleClass="label-box" prefWidth="300" wrapText="true" />
+	</top>
+
+	<center>
+		<StackPane>
+			<ImageView fx:id="imageView" fitWidth="600" fitHeight="400"
+				preserveRatio="true" styleClass="imageView">
+				<image>
+					<Image
+						url="file:/C:/pleiades/2023-12/workspace/java_fx/src/application/image/2f.png" />
+				</image>
+			</ImageView>
+
+		</StackPane>
+
+	</center>
+	<bottom>
+		<VBox alignment="BOTTOM_LEFT" spacing="10">
+			<Button fx:id="button2" text="1階" onAction="#goToFirstFloor" />
+			<Button fx:id="button3" text="3階" onAction="#goToSardFloor" />
+		</VBox>
+	</bottom>
+	<Rectangle fx:id="Area1" x="24.5" y="24.5" width="38"
+		height="111" stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area2" x="63" y="99" width="13" height="36"
+		stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area3" x="24.5" y="135" width="51"
+		height="124" stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area4" x="24.5" y="259" width="242"
+		height="113" stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area5" x="172" y="223" width="95"
+		height="35" stroke="transparent" fill="transparent" />
+	<Rectangle fx:id="Area6" x="168" y="129" width="122"
+		height="60" stroke="transparent" fill="transparent" />
+
+</BorderPane>

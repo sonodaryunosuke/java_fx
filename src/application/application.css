@@ -1,0 +1,26 @@
+
+
+/* Style for the ImageView */
+.borderPane {
+    -fx-border-color: black;
+    -fx-box-sizing: 10px;
+}
+
+
+/* Style for the Button */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 16px;
+}
+.label-box{
+	-fx-background-color: lightgray;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
